@@ -1,6 +1,8 @@
 # Create Contacts List
 # based on https://pythonalgos.com/super-simple-python-contacts-list/
 
+import json
+
 def save_contact(contact: dict, filename: str):
     with open(filename, "a") as f:
         json.dump(contact, f)
@@ -12,5 +14,14 @@ if __name__ == '__main__':
     email = input("Contact email? ")
     phone = input("Contact phone? ")
     relationship = input("Contact relationship? ")
+
+    contact = {
+        "name": name,
+        "email": email,
+        "phone": phone,
+        "relationship": relationship
+    }
+
+    save_contact(contact, "contacts.json")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
