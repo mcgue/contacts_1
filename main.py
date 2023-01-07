@@ -24,4 +24,16 @@ if __name__ == '__main__':
 
     save_contact(contact, "contacts.json")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # Print contacts
+    # Opening JSON file
+    f = open('contacts.json')
+
+    # returns JSON object as a dictionary
+    data = json.load(f)
+
+    # Iterating through the json list to print
+    #for i in data['emp_details']:
+        #print(i)
+
+    # Closing file
+    #f.close()
