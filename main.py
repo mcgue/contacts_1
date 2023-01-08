@@ -26,14 +26,19 @@ if __name__ == '__main__':
 
     # Print contacts
     # Opening JSON file
-    f = open('contacts.json')
+    f = open("contacts.json")
 
     # returns JSON object as a dictionary
-    data = json.load(f)
+    data_json = json.load("contacts.json")
+
+    # Create and print
+    #json_formatted_str = json.dumps(data_json, indent=2)
+
+    #print(json_formatted_str)
 
     # Iterating through the json list to print
-    #for i in data['emp_details']:
-        #print(i)
+    #for i in data_json["name"]:
+    #    print(i)
 
     # Closing file
     #f.close()
