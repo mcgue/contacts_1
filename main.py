@@ -1,3 +1,4 @@
+# Not finished
 # Create Contacts List
 # based on https://pythonalgos.com/super-simple-python-contacts-list/
 
@@ -23,8 +24,7 @@ if __name__ == '__main__':
     #}
 
     # Opening JSON file
-    with open('contacts.json') as user_file:
-        file_contents = user_file.read()
+    with open('contacts.json') as json_file:
+        data = json.load(json_file)
 
-    # Print all contacts
-    print(file_contents)
+ 
