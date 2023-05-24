@@ -17,10 +17,13 @@ if __name__ == '__main__':
     phone = input("Contact phone? ")
     relationship = input("Contact relationship? ")
 
-    #contact = {
-    #   "name": name,
-    #   "email": email,
-    #   "phone": phone,
-    #   "relationship": relationship
-    #}
+    contact = {
+       "name": name,
+       "email": email,
+       "phone": phone,
+       "relationship": relationship
+    }
+    filename = 'contacts.json'
+    with open(filename, "a") as f:
+        json.dump(contact, f)
 
