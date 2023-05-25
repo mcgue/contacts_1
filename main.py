@@ -24,6 +24,5 @@ if __name__ == '__main__':
        "relationship": relationship
     }
     filename = 'contacts.json'
-    with open(filename, "a") as f:
-        json.dump(contact, f)
 
+    save_contact(contact, filename)
