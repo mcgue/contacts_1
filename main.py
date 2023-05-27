@@ -11,6 +11,8 @@ def save_contact(contact: dict, filename: str):
 if __name__ == '__main__':
     # Introduction
     print("This program saves a Contact in your Contacts List")
+    # Declare file location
+    filename = 'contacts.json'
     # Get data
     name = input("Contact name? ")
     email = input("Contact email? ")
@@ -23,6 +25,5 @@ if __name__ == '__main__':
        "phone": phone,
        "relationship": relationship
     }
-    filename = 'contacts.json'
 
     save_contact(contact, filename)
