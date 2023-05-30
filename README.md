@@ -1,2 +1,3 @@
 # contacts_1
-## Not complete
+## Status: Completed a "save" function
+## Future: Add more functions
