@@ -1,3 +1,3 @@
 # contacts_1
-### Status: completed a "save" function
-### Future: add more functions
+Creates and adds to a contacts file.
+Status: completed a "save" function.
